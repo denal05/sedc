@@ -9,5 +9,7 @@
 #import "Food.h"
 
 @implementation Food
+@synthesize name;
+@synthesize foodType;
 
 @end

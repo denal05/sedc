@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		927758FB1D1AEA1A0089D9A0 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 927758FA1D1AEA190089D9A0 /* City.m */; };
 		928B51E21D199E4E0085E609 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 928B51E11D199E4E0085E609 /* main.m */; };
 		928B51E51D199E4E0085E609 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 928B51E41D199E4E0085E609 /* AppDelegate.m */; };
 		928B51E81D199E4E0085E609 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 928B51E71D199E4E0085E609 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		927758F91D1AEA190089D9A0 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		927758FA1D1AEA190089D9A0 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		928B51DD1D199E4E0085E609 /* TableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		928B51E11D199E4E0085E609 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		928B51E31D199E4E0085E609 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				928B51E71D199E4E0085E609 /* ViewController.m */,
 				928B52131D19A7740085E609 /* Food.h */,
 				928B52141D19A7740085E609 /* Food.m */,
+				927758F91D1AEA190089D9A0 /* City.h */,
+				927758FA1D1AEA190089D9A0 /* City.m */,
 				92AF2FDF1D19B76900B958A1 /* test.plist */,
 				928B51E91D199E4E0085E609 /* Main.storyboard */,
 				928B51EC1D199E4E0085E609 /* Assets.xcassets */,
@@ -288,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				927758FB1D1AEA1A0089D9A0 /* City.m in Sources */,
 				928B51E81D199E4E0085E609 /* ViewController.m in Sources */,
 				928B52151D19A7740085E609 /* Food.m in Sources */,
 				928B51E51D199E4E0085E609 /* AppDelegate.m in Sources */,

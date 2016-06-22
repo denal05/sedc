@@ -10,7 +10,13 @@
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
-    NSMutableArray *tableViewArray;
+    NSMutableArray  *tableViewArray;
+    NSArray         *daysOfWeek;
+    NSInteger       i;
+    
+    IBOutlet        UIButton *leftArrowButton;
+    IBOutlet        UIButton *rightArrowButton;
+    IBOutlet        UILabel  *dayOfWeekLabel;
 }
 
 @end
