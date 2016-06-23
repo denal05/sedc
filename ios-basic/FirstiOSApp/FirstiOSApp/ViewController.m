@@ -29,7 +29,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [label setText:@"Hello"];
+    ////[label setText:@"Hello"];
+    
+    NSString *website = @"https://www.cocoacontrols.com/";
+    NSURL *url = [NSURL URLWithString:website];
+    NSString *stringFromURL = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    printf("URL:\n%s\nResponse:\n%s\n", [website UTF8String], [stringFromURL UTF8String]);
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:urlRequest];
+    
+    // @TODO Add actionSheet that has buttons for Google, Facebook and CNN
+    UIActionSheet *ash = [[UIActionSheet alloc] initWithTitle:@"Title" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Dismiss" otherButtonTitles:@"Item1",@"Item2",nil];
+    [ash showInView:self.view];
+
 }
 
 -(void) viewWillDisappear:(BOOL)animated
@@ -46,6 +58,21 @@
 {
     NSInteger result = [tf_A.text integerValue] + [tf_B.text integerValue];
     [label setText:[NSString stringWithFormat:@"%ld", (long)result]];
+}
+
+-(void) webViewDidStartLoad:(UIWebView *) webView
+{
+    printf(">>> webViewDidStartLoad\n");
+}
+
+-(void) webViewDidFinishLoad:(UIWebView *) webView
+{
+    printf(">>> webViewDidFinishLoad\n");
+}
+
+-(void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *) error
+{
+    printf(">>> ERROR\n");
 }
 
 -(void)didReceiveMemoryWarning {
