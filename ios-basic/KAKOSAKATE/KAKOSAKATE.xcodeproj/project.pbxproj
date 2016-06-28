@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		927B554C1D22D30800770615 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B554B1D22D30800770615 /* main.m */; };
+		927B554F1D22D30800770615 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B554E1D22D30800770615 /* AppDelegate.m */; };
+		927B55571D22D30800770615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 927B55561D22D30800770615 /* Assets.xcassets */; };
+		927B555A1D22D30800770615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927B55581D22D30800770615 /* LaunchScreen.storyboard */; };
+		927B55651D22D30800770615 /* KAKOSAKATETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B55641D22D30800770615 /* KAKOSAKATETests.m */; };
+		927B55701D22D30800770615 /* KAKOSAKATEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B556F1D22D30800770615 /* KAKOSAKATEUITests.m */; };
+		927B55801D22D38D00770615 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B557E1D22D38D00770615 /* MainViewController.m */; };
+		927B55811D22D38D00770615 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927B557F1D22D38D00770615 /* MainViewController.xib */; };
+		927B55851D22D67400770615 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B55831D22D67400770615 /* FirstViewController.m */; };
+		927B55861D22D67400770615 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927B55841D22D67400770615 /* FirstViewController.xib */; };
+		927B55891D22E31200770615 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B55881D22E31200770615 /* City.m */; };
+		927B558D1D22EAA200770615 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B558B1D22EAA200770615 /* SecondViewController.m */; };
+		927B558E1D22EAA200770615 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927B558C1D22EAA200770615 /* SecondViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		927B55611D22D30800770615 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 927B553F1D22D30800770615 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 927B55461D22D30800770615;
+			remoteInfo = KAKOSAKATE;
+		};
+		927B556C1D22D30800770615 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 927B553F1D22D30800770615 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 927B55461D22D30800770615;
+			remoteInfo = KAKOSAKATE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		927B55471D22D30800770615 /* KAKOSAKATE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAKOSAKATE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		927B554B1D22D30800770615 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		927B554D1D22D30800770615 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		927B554E1D22D30800770615 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		927B55561D22D30800770615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		927B55591D22D30800770615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		927B555B1D22D30800770615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		927B55601D22D30800770615 /* KAKOSAKATETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAKOSAKATETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		927B55641D22D30800770615 /* KAKOSAKATETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAKOSAKATETests.m; sourceTree = "<group>"; };
+		927B55661D22D30800770615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		927B556B1D22D30800770615 /* KAKOSAKATEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAKOSAKATEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		927B556F1D22D30800770615 /* KAKOSAKATEUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAKOSAKATEUITests.m; sourceTree = "<group>"; };
+		927B55711D22D30800770615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		927B557D1D22D38D00770615 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		927B557E1D22D38D00770615 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		927B557F1D22D38D00770615 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		927B55821D22D67400770615 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		927B55831D22D67400770615 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		927B55841D22D67400770615 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		927B55871D22E31200770615 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		927B55881D22E31200770615 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		927B558A1D22EAA200770615 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		927B558B1D22EAA200770615 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		927B558C1D22EAA200770615 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		927B55441D22D30800770615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927B555D1D22D30800770615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927B55681D22D30800770615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		927B553E1D22D30800770615 = {
+			isa = PBXGroup;
+			children = (
+				927B55491D22D30800770615 /* KAKOSAKATE */,
+				927B55631D22D30800770615 /* KAKOSAKATETests */,
+				927B556E1D22D30800770615 /* KAKOSAKATEUITests */,
+				927B55481D22D30800770615 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		927B55481D22D30800770615 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				927B55471D22D30800770615 /* KAKOSAKATE.app */,
+				927B55601D22D30800770615 /* KAKOSAKATETests.xctest */,
+				927B556B1D22D30800770615 /* KAKOSAKATEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		927B55491D22D30800770615 /* KAKOSAKATE */ = {
+			isa = PBXGroup;
+			children = (
+				927B554D1D22D30800770615 /* AppDelegate.h */,
+				927B554E1D22D30800770615 /* AppDelegate.m */,
+				927B55871D22E31200770615 /* City.h */,
+				927B55881D22E31200770615 /* City.m */,
+				927B557D1D22D38D00770615 /* MainViewController.h */,
+				927B557E1D22D38D00770615 /* MainViewController.m */,
+				927B557F1D22D38D00770615 /* MainViewController.xib */,
+				927B55821D22D67400770615 /* FirstViewController.h */,
+				927B55831D22D67400770615 /* FirstViewController.m */,
+				927B55841D22D67400770615 /* FirstViewController.xib */,
+				927B558A1D22EAA200770615 /* SecondViewController.h */,
+				927B558B1D22EAA200770615 /* SecondViewController.m */,
+				927B558C1D22EAA200770615 /* SecondViewController.xib */,
+				927B55561D22D30800770615 /* Assets.xcassets */,
+				927B55581D22D30800770615 /* LaunchScreen.storyboard */,
+				927B555B1D22D30800770615 /* Info.plist */,
+				927B554A1D22D30800770615 /* Supporting Files */,
+			);
+			path = KAKOSAKATE;
+			sourceTree = "<group>";
+		};
+		927B554A1D22D30800770615 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				927B554B1D22D30800770615 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		927B55631D22D30800770615 /* KAKOSAKATETests */ = {
+			isa = PBXGroup;
+			children = (
+				927B55641D22D30800770615 /* KAKOSAKATETests.m */,
+				927B55661D22D30800770615 /* Info.plist */,
+			);
+			path = KAKOSAKATETests;
+			sourceTree = "<group>";
+		};
+		927B556E1D22D30800770615 /* KAKOSAKATEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				927B556F1D22D30800770615 /* KAKOSAKATEUITests.m */,
+				927B55711D22D30800770615 /* Info.plist */,
+			);
+			path = KAKOSAKATEUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		927B55461D22D30800770615 /* KAKOSAKATE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 927B55741D22D30800770615 /* Build configuration list for PBXNativeTarget "KAKOSAKATE" */;
+			buildPhases = (
+				927B55431D22D30800770615 /* Sources */,
+				927B55441D22D30800770615 /* Frameworks */,
+				927B55451D22D30800770615 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KAKOSAKATE;
+			productName = KAKOSAKATE;
+			productReference = 927B55471D22D30800770615 /* KAKOSAKATE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		927B555F1D22D30800770615 /* KAKOSAKATETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 927B55771D22D30800770615 /* Build configuration list for PBXNativeTarget "KAKOSAKATETests" */;
+			buildPhases = (
+				927B555C1D22D30800770615 /* Sources */,
+				927B555D1D22D30800770615 /* Frameworks */,
+				927B555E1D22D30800770615 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				927B55621D22D30800770615 /* PBXTargetDependency */,
+			);
+			name = KAKOSAKATETests;
+			productName = KAKOSAKATETests;
+			productReference = 927B55601D22D30800770615 /* KAKOSAKATETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		927B556A1D22D30800770615 /* KAKOSAKATEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 927B557A1D22D30800770615 /* Build configuration list for PBXNativeTarget "KAKOSAKATEUITests" */;
+			buildPhases = (
+				927B55671D22D30800770615 /* Sources */,
+				927B55681D22D30800770615 /* Frameworks */,
+				927B55691D22D30800770615 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				927B556D1D22D30800770615 /* PBXTargetDependency */,
+			);
+			name = KAKOSAKATEUITests;
+			productName = KAKOSAKATEUITests;
+			productReference = 927B556B1D22D30800770615 /* KAKOSAKATEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		927B553F1D22D30800770615 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = INform;
+				TargetAttributes = {
+					927B55461D22D30800770615 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3W87LMAKKX;
+						DevelopmentTeamName = "Denis Aleksandrov (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					927B555F1D22D30800770615 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3W87LMAKKX;
+						DevelopmentTeamName = "Denis Aleksandrov (Personal Team)";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 927B55461D22D30800770615;
+					};
+					927B556A1D22D30800770615 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3W87LMAKKX;
+						DevelopmentTeamName = "Denis Aleksandrov (Personal Team)";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 927B55461D22D30800770615;
+					};
+				};
+			};
+			buildConfigurationList = 927B55421D22D30800770615 /* Build configuration list for PBXProject "KAKOSAKATE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 927B553E1D22D30800770615;
+			productRefGroup = 927B55481D22D30800770615 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				927B55461D22D30800770615 /* KAKOSAKATE */,
+				927B555F1D22D30800770615 /* KAKOSAKATETests */,
+				927B556A1D22D30800770615 /* KAKOSAKATEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		927B55451D22D30800770615 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927B555A1D22D30800770615 /* LaunchScreen.storyboard in Resources */,
+				927B55811D22D38D00770615 /* MainViewController.xib in Resources */,
+				927B55571D22D30800770615 /* Assets.xcassets in Resources */,
+				927B55861D22D67400770615 /* FirstViewController.xib in Resources */,
+				927B558E1D22EAA200770615 /* SecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927B555E1D22D30800770615 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927B55691D22D30800770615 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		927B55431D22D30800770615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927B558D1D22EAA200770615 /* SecondViewController.m in Sources */,
+				927B55891D22E31200770615 /* City.m in Sources */,
+				927B554F1D22D30800770615 /* AppDelegate.m in Sources */,
+				927B55801D22D38D00770615 /* MainViewController.m in Sources */,
+				927B554C1D22D30800770615 /* main.m in Sources */,
+				927B55851D22D67400770615 /* FirstViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927B555C1D22D30800770615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927B55651D22D30800770615 /* KAKOSAKATETests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927B55671D22D30800770615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927B55701D22D30800770615 /* KAKOSAKATEUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		927B55621D22D30800770615 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 927B55461D22D30800770615 /* KAKOSAKATE */;
+			targetProxy = 927B55611D22D30800770615 /* PBXContainerItemProxy */;
+		};
+		927B556D1D22D30800770615 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 927B55461D22D30800770615 /* KAKOSAKATE */;
+			targetProxy = 927B556C1D22D30800770615 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		927B55581D22D30800770615 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				927B55591D22D30800770615 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		927B55721D22D30800770615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		927B55731D22D30800770615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		927B55751D22D30800770615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KAKOSAKATE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mk.inform.KAKOSAKATE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		927B55761D22D30800770615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KAKOSAKATE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mk.inform.KAKOSAKATE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		927B55781D22D30800770615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KAKOSAKATETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mk.inform.KAKOSAKATETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAKOSAKATE.app/KAKOSAKATE";
+			};
+			name = Debug;
+		};
+		927B55791D22D30800770615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KAKOSAKATETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mk.inform.KAKOSAKATETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAKOSAKATE.app/KAKOSAKATE";
+			};
+			name = Release;
+		};
+		927B557B1D22D30800770615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KAKOSAKATEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mk.inform.KAKOSAKATEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KAKOSAKATE;
+			};
+			name = Debug;
+		};
+		927B557C1D22D30800770615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KAKOSAKATEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mk.inform.KAKOSAKATEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KAKOSAKATE;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		927B55421D22D30800770615 /* Build configuration list for PBXProject "KAKOSAKATE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927B55721D22D30800770615 /* Debug */,
+				927B55731D22D30800770615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		927B55741D22D30800770615 /* Build configuration list for PBXNativeTarget "KAKOSAKATE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927B55751D22D30800770615 /* Debug */,
+				927B55761D22D30800770615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		927B55771D22D30800770615 /* Build configuration list for PBXNativeTarget "KAKOSAKATETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927B55781D22D30800770615 /* Debug */,
+				927B55791D22D30800770615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		927B557A1D22D30800770615 /* Build configuration list for PBXNativeTarget "KAKOSAKATEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927B557B1D22D30800770615 /* Debug */,
+				927B557C1D22D30800770615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 927B553F1D22D30800770615 /* Project object */;
+}
