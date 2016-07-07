@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MySerializableObject.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface ViewController ()
 
@@ -33,6 +34,28 @@
     MySerializableObject *unserObj = [NSKeyedUnarchiver unarchiveObjectWithData:unarchivedSerObj];
     
     printf(">>>%s %s\n", [unserObj.testName UTF8String], [unserObj.testDescription UTF8String]);
+    
+    [self testingScrollView];
+}
+
+-(void)testingScrollView
+{
+    [_myScrollView setBackgroundColor:[UIColor grayColor]];
+    
+    CGRect tmpFrame = _myScrollView.frame;
+    tmpFrame.origin.x = 0;
+    tmpFrame.origin.y = 100;
+    UIView *containerView = [[UIView alloc] initWithFrame:tmpFrame];
+    [containerView setBackgroundColor:[UIColor blueColor]];
+    [_myScrollView addSubview:containerView];
+    
+    tmpFrame.size.height += 100;
+    [containerView setFrame:tmpFrame];
+    [_myScrollView setContentSize:tmpFrame.size];
+    
+    UILabel *tmpLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, tmpFrame.size.height+10, 200, 30)];
+    [tmpLabel setText:@"hello world"];
+    [_myScrollView addSubview:tmpLabel];
 }
 
 - (void)didReceiveMemoryWarning {
