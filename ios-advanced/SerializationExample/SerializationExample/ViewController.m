@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MySerializableObject.h"
 #import <AFNetworking/AFNetworking.h>
+#import "BaseClass.h"
 
 @interface ViewController ()
 
@@ -19,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    /*
     [[NSUserDefaults standardUserDefaults] setObject:@"tmp" forKey:@"1"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     printf(">>>standardUserDefaults value: %s forKey: 1\n", [[[NSUserDefaults standardUserDefaults] objectForKey:@"1"] UTF8String]);
@@ -36,6 +37,36 @@
     printf(">>>%s %s\n", [unserObj.testName UTF8String], [unserObj.testDescription UTF8String]);
     
     [self testingScrollView];
+    */
+    //////////////////////////////////
+    
+    NSString *apiUrl = @"http://jsonplaceholder.typicode.com/posts?userId=1";
+    _dataArray = [NSMutableArray new];
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    
+    [manager GET:apiUrl parameters:nil progress: ^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            printf(">>> SUCCESS\n");
+            for (NSDictionary *d in responseObject)
+            {
+                BaseClass *bc = [[BaseClass alloc] initWithDictionary:d];
+                printf(">>>>>> id=%f, title=%s\n", bc.internalBaseClassIdentifier, [bc.title UTF8String]);
+            }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        printf(">>> ERROR: %s\n", [error.localizedDescription UTF8String]);
+    }];
+}
+
+-(void)printDataArray
+{
+    printf(">>> printDataArray()\n");
+    for (BaseClass *bc in _dataArray)
+    {
+        printf(">>>>>> id=%f, title=%s\n", bc.internalBaseClassIdentifier, bc.title);
+    }
 }
 
 -(void)testingScrollView

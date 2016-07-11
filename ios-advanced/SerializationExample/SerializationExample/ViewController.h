@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIScrollView *myScrollView;
+@property (copy) NSMutableArray *dataArray;
 
 @end
 
