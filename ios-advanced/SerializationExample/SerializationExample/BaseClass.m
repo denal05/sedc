@@ -1,17 +1,15 @@
 //
 //  BaseClass.m
 //
-//  Created by Denis Aleksandrov on 7/11/16
+//  Created by Dejan Krstevski on 7/11/16
 //  Copyright (c) 2016 __MyCompanyName__. All rights reserved.
 //
 
 #import "BaseClass.h"
+#import "Query.h"
 
 
-NSString *const kBaseClassBody = @"body";
-NSString *const kBaseClassId = @"id";
-NSString *const kBaseClassTitle = @"title";
-NSString *const kBaseClassUserId = @"userId";
+NSString *const kBaseClassQuery = @"query";
 
 
 @interface BaseClass ()
@@ -22,10 +20,7 @@ NSString *const kBaseClassUserId = @"userId";
 
 @implementation BaseClass
 
-@synthesize body = _body;
-@synthesize internalBaseClassIdentifier = _internalBaseClassIdentifier;
-@synthesize title = _title;
-@synthesize userId = _userId;
+@synthesize query = _query;
 
 
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict
@@ -40,10 +35,7 @@ NSString *const kBaseClassUserId = @"userId";
     // This check serves to make sure that a non-NSDictionary object
     // passed into the model class doesn't break the parsing.
     if(self && [dict isKindOfClass:[NSDictionary class]]) {
-            self.body = [self objectOrNilForKey:kBaseClassBody fromDictionary:dict];
-            self.internalBaseClassIdentifier = [[self objectOrNilForKey:kBaseClassId fromDictionary:dict] doubleValue];
-            self.title = [self objectOrNilForKey:kBaseClassTitle fromDictionary:dict];
-            self.userId = [[self objectOrNilForKey:kBaseClassUserId fromDictionary:dict] doubleValue];
+            self.query = [Query modelObjectWithDictionary:[dict objectForKey:kBaseClassQuery]];
 
     }
     
@@ -54,10 +46,7 @@ NSString *const kBaseClassUserId = @"userId";
 - (NSDictionary *)dictionaryRepresentation
 {
     NSMutableDictionary *mutableDict = [NSMutableDictionary dictionary];
-    [mutableDict setValue:self.body forKey:kBaseClassBody];
-    [mutableDict setValue:[NSNumber numberWithDouble:self.internalBaseClassIdentifier] forKey:kBaseClassId];
-    [mutableDict setValue:self.title forKey:kBaseClassTitle];
-    [mutableDict setValue:[NSNumber numberWithDouble:self.userId] forKey:kBaseClassUserId];
+    [mutableDict setValue:[self.query dictionaryRepresentation] forKey:kBaseClassQuery];
 
     return [NSDictionary dictionaryWithDictionary:mutableDict];
 }
@@ -81,20 +70,14 @@ NSString *const kBaseClassUserId = @"userId";
 {
     self = [super init];
 
-    self.body = [aDecoder decodeObjectForKey:kBaseClassBody];
-    self.internalBaseClassIdentifier = [aDecoder decodeDoubleForKey:kBaseClassId];
-    self.title = [aDecoder decodeObjectForKey:kBaseClassTitle];
-    self.userId = [aDecoder decodeDoubleForKey:kBaseClassUserId];
+    self.query = [aDecoder decodeObjectForKey:kBaseClassQuery];
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
 
-    [aCoder encodeObject:_body forKey:kBaseClassBody];
-    [aCoder encodeDouble:_internalBaseClassIdentifier forKey:kBaseClassId];
-    [aCoder encodeObject:_title forKey:kBaseClassTitle];
-    [aCoder encodeDouble:_userId forKey:kBaseClassUserId];
+    [aCoder encodeObject:_query forKey:kBaseClassQuery];
 }
 
 - (id)copyWithZone:(NSZone *)zone
@@ -103,10 +86,7 @@ NSString *const kBaseClassUserId = @"userId";
     
     if (copy) {
 
-        copy.body = [self.body copyWithZone:zone];
-        copy.internalBaseClassIdentifier = self.internalBaseClassIdentifier;
-        copy.title = [self.title copyWithZone:zone];
-        copy.userId = self.userId;
+        copy.query = [self.query copyWithZone:zone];
     }
     
     return copy;

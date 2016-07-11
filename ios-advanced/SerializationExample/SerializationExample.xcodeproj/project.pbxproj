@@ -10,7 +10,6 @@
 		1ED637D922880D31A0A5C036 /* libPods-SerializationExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C3551E9E04C6784D9155CD /* libPods-SerializationExampleUITests.a */; };
 		4733E2125D8156ABD2615156 /* libPods-SerializationExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19956B944014A42FBBB54458 /* libPods-SerializationExample.a */; };
 		71C8C9B38CFD569C7318FE9D /* libPods-SerializationExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0F6A4FA449A64E8B5F5995 /* libPods-SerializationExampleTests.a */; };
-		920BE6691D33FD7400F0F3E6 /* BaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 920BE6671D33FD7400F0F3E6 /* BaseClass.m */; };
 		920BE6861D34071F00F0F3E6 /* Astronomy.m in Sources */ = {isa = PBXBuildFile; fileRef = 920BE66B1D34071F00F0F3E6 /* Astronomy.m */; };
 		920BE6871D34071F00F0F3E6 /* Atmosphere.m in Sources */ = {isa = PBXBuildFile; fileRef = 920BE66D1D34071F00F0F3E6 /* Atmosphere.m */; };
 		920BE6881D34071F00F0F3E6 /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 920BE66F1D34071F00F0F3E6 /* Channel.m */; };
@@ -25,6 +24,7 @@
 		920BE6911D34071F00F0F3E6 /* Units.m in Sources */ = {isa = PBXBuildFile; fileRef = 920BE6811D34071F00F0F3E6 /* Units.m */; };
 		920BE6921D34071F00F0F3E6 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 920BE6831D34071F00F0F3E6 /* Weather.m */; };
 		920BE6931D34071F00F0F3E6 /* Wind.m in Sources */ = {isa = PBXBuildFile; fileRef = 920BE6851D34071F00F0F3E6 /* Wind.m */; };
+		920BE6961D341C5200F0F3E6 /* BaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 920BE6951D341C5200F0F3E6 /* BaseClass.m */; };
 		92B6137F1D2EB2F900B06AE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B6137E1D2EB2F900B06AE6 /* main.m */; };
 		92B613821D2EB2F900B06AE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B613811D2EB2F900B06AE6 /* AppDelegate.m */; };
 		92B613851D2EB2F900B06AE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B613841D2EB2F900B06AE6 /* ViewController.m */; };
@@ -60,8 +60,6 @@
 		614AB079BC9489D13EFFDBCB /* Pods-SerializationExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SerializationExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SerializationExample/Pods-SerializationExample.debug.xcconfig"; sourceTree = "<group>"; };
 		75C3551E9E04C6784D9155CD /* libPods-SerializationExampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SerializationExampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4967F65F03563D4D1AFDD4 /* Pods-SerializationExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SerializationExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SerializationExample/Pods-SerializationExample.release.xcconfig"; sourceTree = "<group>"; };
-		920BE6661D33FD7400F0F3E6 /* BaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseClass.h; sourceTree = "<group>"; };
-		920BE6671D33FD7400F0F3E6 /* BaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseClass.m; sourceTree = "<group>"; };
 		920BE6681D33FD7400F0F3E6 /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
 		920BE66A1D34071F00F0F3E6 /* Astronomy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Astronomy.h; sourceTree = "<group>"; };
 		920BE66B1D34071F00F0F3E6 /* Astronomy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Astronomy.m; sourceTree = "<group>"; };
@@ -91,6 +89,8 @@
 		920BE6831D34071F00F0F3E6 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		920BE6841D34071F00F0F3E6 /* Wind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wind.h; sourceTree = "<group>"; };
 		920BE6851D34071F00F0F3E6 /* Wind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wind.m; sourceTree = "<group>"; };
+		920BE6941D341C5200F0F3E6 /* BaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseClass.h; sourceTree = "<group>"; };
+		920BE6951D341C5200F0F3E6 /* BaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseClass.m; sourceTree = "<group>"; };
 		927A8EE3DF48A7C746812B6A /* Pods-SerializationExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SerializationExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SerializationExampleUITests/Pods-SerializationExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92B6137A1D2EB2F900B06AE6 /* SerializationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SerializationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B6137E1D2EB2F900B06AE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -196,8 +196,8 @@
 				92B613841D2EB2F900B06AE6 /* ViewController.m */,
 				92B613B01D2EB5B000B06AE6 /* MySerializableObject.h */,
 				92B613B11D2EB5B000B06AE6 /* MySerializableObject.m */,
-				920BE6661D33FD7400F0F3E6 /* BaseClass.h */,
-				920BE6671D33FD7400F0F3E6 /* BaseClass.m */,
+				920BE6941D341C5200F0F3E6 /* BaseClass.h */,
+				920BE6951D341C5200F0F3E6 /* BaseClass.m */,
 				920BE6681D33FD7400F0F3E6 /* DataModels.h */,
 				920BE66A1D34071F00F0F3E6 /* Astronomy.h */,
 				920BE66B1D34071F00F0F3E6 /* Astronomy.m */,
@@ -539,6 +539,7 @@
 				920BE6871D34071F00F0F3E6 /* Atmosphere.m in Sources */,
 				920BE68A1D34071F00F0F3E6 /* Forecast.m in Sources */,
 				92B613B21D2EB5B000B06AE6 /* MySerializableObject.m in Sources */,
+				920BE6961D341C5200F0F3E6 /* BaseClass.m in Sources */,
 				920BE68B1D34071F00F0F3E6 /* Guid.m in Sources */,
 				920BE6901D34071F00F0F3E6 /* Results.m in Sources */,
 				920BE6861D34071F00F0F3E6 /* Astronomy.m in Sources */,
@@ -547,7 +548,6 @@
 				920BE68F1D34071F00F0F3E6 /* Query.m in Sources */,
 				920BE6911D34071F00F0F3E6 /* Units.m in Sources */,
 				920BE6881D34071F00F0F3E6 /* Channel.m in Sources */,
-				920BE6691D33FD7400F0F3E6 /* BaseClass.m in Sources */,
 				920BE68C1D34071F00F0F3E6 /* Image.m in Sources */,
 				92B6137F1D2EB2F900B06AE6 /* main.m in Sources */,
 				920BE6891D34071F00F0F3E6 /* Condition.m in Sources */,

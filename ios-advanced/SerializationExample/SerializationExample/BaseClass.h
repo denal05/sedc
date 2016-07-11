@@ -1,20 +1,17 @@
 //
 //  BaseClass.h
 //
-//  Created by Denis Aleksandrov on 7/11/16
+//  Created by Dejan Krstevski on 7/11/16
 //  Copyright (c) 2016 __MyCompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-
+@class Query;
 
 @interface BaseClass : NSObject <NSCoding, NSCopying>
 
-@property (nonatomic, strong) NSString *body;
-@property (nonatomic, assign) double internalBaseClassIdentifier;
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, assign) double userId;
+@property (nonatomic, strong) Query *query;
 
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
