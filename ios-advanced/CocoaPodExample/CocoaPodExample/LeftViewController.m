@@ -22,10 +22,15 @@
     // Do any additional setup after loading the view from its nib.
 }
 - (IBAction)button1Action:(id)sender {
+    /*
     MainViewController *tmpMainViewController = [self.viewDeckController centerController];
     [tmpMainViewController presentViewController:[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] animated:YES completion:^{
         ////[self.viewDeckController closeLeftViewAnimated:YES];
     }];
+    */
+    
+    [(UINavigationController *) [self.viewDeckController centerController] pushViewController:[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] animated:YES];
+    [self.viewDeckController closeLeftViewAnimated:YES];
 }
 
 - (IBAction)button2Action:(id)sender {

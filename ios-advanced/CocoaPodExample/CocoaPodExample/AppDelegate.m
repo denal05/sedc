@@ -22,9 +22,9 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-                   
     MainViewController *main = [[MainViewController alloc] init];
-    IIViewDeckController *viewDeck = [[IIViewDeckController alloc] initWithCenterViewController:main leftViewController:[[LeftViewController alloc] init]];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:main];
+    IIViewDeckController *viewDeck = [[IIViewDeckController alloc] initWithCenterViewController:nav leftViewController:[[LeftViewController alloc] init]];
     [self.window setRootViewController:viewDeck];
     [self.window makeKeyAndVisible];
     return YES;
