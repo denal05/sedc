@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0800"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "92A0EF6A1D35468600718916"
+               BuildableName = "AddingUIElementsAndConstraintsProgramatically.app"
+               BlueprintName = "AddingUIElementsAndConstraintsProgramatically"
+               ReferencedContainer = "container:AddingUIElementsAndConstraintsProgramatically.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "92A0EF831D35468700718916"
+               BuildableName = "AddingUIElementsAndConstraintsProgramaticallyTests.xctest"
+               BlueprintName = "AddingUIElementsAndConstraintsProgramaticallyTests"
+               ReferencedContainer = "container:AddingUIElementsAndConstraintsProgramatically.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "92A0EF8E1D35468700718916"
+               BuildableName = "AddingUIElementsAndConstraintsProgramaticallyUITests.xctest"
+               BlueprintName = "AddingUIElementsAndConstraintsProgramaticallyUITests"
+               ReferencedContainer = "container:AddingUIElementsAndConstraintsProgramatically.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "92A0EF6A1D35468600718916"
+            BuildableName = "AddingUIElementsAndConstraintsProgramatically.app"
+            BlueprintName = "AddingUIElementsAndConstraintsProgramatically"
+            ReferencedContainer = "container:AddingUIElementsAndConstraintsProgramatically.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "92A0EF6A1D35468600718916"
+            BuildableName = "AddingUIElementsAndConstraintsProgramatically.app"
+            BlueprintName = "AddingUIElementsAndConstraintsProgramatically"
+            ReferencedContainer = "container:AddingUIElementsAndConstraintsProgramatically.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "92A0EF6A1D35468600718916"
+            BuildableName = "AddingUIElementsAndConstraintsProgramatically.app"
+            BlueprintName = "AddingUIElementsAndConstraintsProgramatically"
+            ReferencedContainer = "container:AddingUIElementsAndConstraintsProgramatically.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
