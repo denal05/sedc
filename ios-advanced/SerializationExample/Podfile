@@ -8,6 +8,7 @@ target 'SerializationExample' do
   # Pods for SerializationExample
   pod 'AFNetworking'
   pod 'Reachability'
+  pod 'ViewDeck'
 
   target 'SerializationExampleTests' do
     inherit! :search_paths
