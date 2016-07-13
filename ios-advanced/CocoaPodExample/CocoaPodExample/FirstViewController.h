@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Contacts.h"
 
 @interface FirstViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *fvc_labelFirstName;
+@property (nonatomic) Contacts *currentContact;
 
 @end

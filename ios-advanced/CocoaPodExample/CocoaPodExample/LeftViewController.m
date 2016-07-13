@@ -81,10 +81,14 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    printf("didSelectRowAtIndexPath: %ld", indexPath.row);
+    printf(">>> didSelectRowAtIndexPath: %ld\n", indexPath.row);
     
     // @TODO
     // viewDeck already has instances to all the view controllers. Declare a @property in FirstViewcontroller and set it from LeftViewController when initializing FirstViewcontroller to pass info. Write a method to update the text of a label in FirstViewcontroller.
+    FirstViewController *theFirstViewController = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    theFirstViewController.currentContact = [tableViewArray objectAtIndex: indexPath.row];
+    [(UINavigationController *) [self.viewDeckController centerController] pushViewController:theFirstViewController animated:YES];
+    [self.viewDeckController closeLeftViewAnimated:YES];
 }
 
 - (IBAction)button1Action:(id)sender {

@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [_fvc_labelFirstName setText:_currentContact.first_name];
 }
 
 - (IBAction)closeButtonAction:(id)sender {
