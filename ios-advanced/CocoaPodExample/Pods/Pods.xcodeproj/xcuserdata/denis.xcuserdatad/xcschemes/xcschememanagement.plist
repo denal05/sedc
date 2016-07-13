@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SSKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ViewDeck.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1653F8F2FAF4F06BF6470AA1109AE614</key>
+		<key>0E2C1ECE688F37E341495F1152900709</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7F2AE5E14BEDFCEDF46354C2536A6832</key>
+		<key>1653F8F2FAF4F06BF6470AA1109AE614</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>D997282957EB2883B4C5663CC216F817</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E4A0E0491F7E581759C6A65817ABDB0A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F4955158479970424F3EB8DAC125EDA8</key>
+		<key>E618C5A8F8F7573E6B811DDBD2BE23DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "LeftViewController.h"
+#import "LoginViewController.h"
 #import <ViewDeck/ViewDeck.h>
 
 @interface AppDelegate ()
@@ -22,10 +23,16 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    /*
     MainViewController *main = [[MainViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:main];
     IIViewDeckController *viewDeck = [[IIViewDeckController alloc] initWithCenterViewController:nav leftViewController:[[LeftViewController alloc] init]];
-    [self.window setRootViewController:viewDeck];
+    */
+    
+    LoginViewController *login = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    
+    [self.window setRootViewController:login];
     [self.window makeKeyAndVisible];
     return YES;
 }

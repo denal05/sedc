@@ -8,6 +8,7 @@ target 'CocoaPodExample' do
   # Pods for CocoaPodExample
   pod 'AFNetworking'
   pod 'ViewDeck'
+  pod 'SSKeychain'
 
   target 'CocoaPodExampleTests' do
     inherit! :search_paths

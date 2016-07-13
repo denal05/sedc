@@ -21,7 +21,8 @@
 		92A0EFF01D355D1A00718916 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A0EFEE1D355D1A00718916 /* FirstViewController.m */; };
 		92A0EFF11D355D1A00718916 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A0EFEF1D355D1A00718916 /* FirstViewController.xib */; };
 		92F20B411D369BD300259C13 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F20B401D369BD300259C13 /* Contacts.m */; };
-		92F20B451D369F3600259C13 /* BaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F20B431D369F3600259C13 /* BaseClass.m */; };
+		92F20B4F1D36B8AF00259C13 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F20B4D1D36B8AF00259C13 /* LoginViewController.m */; };
+		92F20B501D36B8AF00259C13 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92F20B4E1D36B8AF00259C13 /* LoginViewController.xib */; };
 		A7CB829791BA8E2656D1C461 /* libPods-CocoaPodExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B64460E992D2EEB4BBD6C2 /* libPods-CocoaPodExample.a */; };
 		AA688EB1CD03F7E7EBC20D8B /* libPods-CocoaPodExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7A1DDE7BF9313F8B0F945D /* libPods-CocoaPodExampleUITests.a */; };
 /* End PBXBuildFile section */
@@ -52,7 +53,7 @@
 		92A0EFAA1D3556E000718916 /* CocoaPodExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A0EFAE1D3556E000718916 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92A0EFB01D3556E000718916 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		92A0EFB11D3556E000718916 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		92A0EFB11D3556E000718916 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		92A0EFB91D3556E000718916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92A0EFBC1D3556E000718916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92A0EFBE1D3556E100718916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,11 +72,11 @@
 		92A0EFED1D355D1A00718916 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		92A0EFEE1D355D1A00718916 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		92A0EFEF1D355D1A00718916 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
-		92F20B3F1D369BD300259C13 /* Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
-		92F20B401D369BD300259C13 /* Contacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacts.m; sourceTree = "<group>"; };
-		92F20B421D369F3600259C13 /* BaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseClass.h; sourceTree = "<group>"; };
-		92F20B431D369F3600259C13 /* BaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseClass.m; sourceTree = "<group>"; };
-		92F20B441D369F3600259C13 /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
+		92F20B3F1D369BD300259C13 /* Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Contacts.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		92F20B401D369BD300259C13 /* Contacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Contacts.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		92F20B4C1D36B8AF00259C13 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		92F20B4D1D36B8AF00259C13 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		92F20B4E1D36B8AF00259C13 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		94A3E81002B9AF77D0C56B24 /* Pods-CocoaPodExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPodExample/Pods-CocoaPodExample.release.xcconfig"; sourceTree = "<group>"; };
 		AC7A1DDE7BF9313F8B0F945D /* libPods-CocoaPodExampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaPodExampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B72A35D61846CF6EA6BD93A3 /* Pods-CocoaPodExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPodExampleTests/Pods-CocoaPodExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,9 +160,9 @@
 				92A0EFE01D3557C700718916 /* MainViewController.h */,
 				92A0EFE11D3557C700718916 /* MainViewController.m */,
 				92A0EFE21D3557C700718916 /* MainViewController.xib */,
-				92F20B421D369F3600259C13 /* BaseClass.h */,
-				92F20B431D369F3600259C13 /* BaseClass.m */,
-				92F20B441D369F3600259C13 /* DataModels.h */,
+				92F20B4C1D36B8AF00259C13 /* LoginViewController.h */,
+				92F20B4D1D36B8AF00259C13 /* LoginViewController.m */,
+				92F20B4E1D36B8AF00259C13 /* LoginViewController.xib */,
 				92F20B3F1D369BD300259C13 /* Contacts.h */,
 				92F20B401D369BD300259C13 /* Contacts.m */,
 				92A0EFB91D3556E000718916 /* Assets.xcassets */,
@@ -330,6 +331,7 @@
 			files = (
 				92A0EFBD1D3556E000718916 /* LaunchScreen.storyboard in Resources */,
 				92A0EFF11D355D1A00718916 /* FirstViewController.xib in Resources */,
+				92F20B501D36B8AF00259C13 /* LoginViewController.xib in Resources */,
 				92A0EFEC1D355C8B00718916 /* LeftViewController.xib in Resources */,
 				92A0EFE41D3557C700718916 /* MainViewController.xib in Resources */,
 				92A0EFBA1D3556E000718916 /* Assets.xcassets in Resources */,
@@ -484,9 +486,9 @@
 				92A0EFEB1D355C8B00718916 /* LeftViewController.m in Sources */,
 				92F20B411D369BD300259C13 /* Contacts.m in Sources */,
 				92A0EFF01D355D1A00718916 /* FirstViewController.m in Sources */,
+				92F20B4F1D36B8AF00259C13 /* LoginViewController.m in Sources */,
 				92A0EFE31D3557C700718916 /* MainViewController.m in Sources */,
 				92A0EFAF1D3556E000718916 /* main.m in Sources */,
-				92F20B451D369F3600259C13 /* BaseClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

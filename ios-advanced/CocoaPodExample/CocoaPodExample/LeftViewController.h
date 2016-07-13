@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LeftViewController : UIViewController
+@interface LeftViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    NSMutableArray  *tableViewArray;
+    __weak IBOutlet UITableView *tableView;
+}
 
 @end
