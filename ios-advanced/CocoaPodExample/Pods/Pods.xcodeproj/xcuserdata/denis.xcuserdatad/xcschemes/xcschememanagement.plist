@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-CocoaPodExample.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3DCBF96D3BDD01A5881C2B7382D8162B</key>
+		<key>7F2AE5E14BEDFCEDF46354C2536A6832</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6324B5B5B9FB0409EAD584759ACC3B1E</key>
+		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E4A0E0491F7E581759C6A65817ABDB0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4955158479970424F3EB8DAC125EDA8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

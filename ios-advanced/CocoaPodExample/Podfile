@@ -6,6 +6,7 @@ target 'CocoaPodExample' do
   # use_frameworks!
 
   # Pods for CocoaPodExample
+  pod 'AFNetworking'
   pod 'ViewDeck'
 
   target 'CocoaPodExampleTests' do
