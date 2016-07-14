@@ -65,6 +65,21 @@
     printf(">>>timer2\n");
 }
 
+-(void)test1
+{
+    
+}
+
+-(void)test2:(NSString *)tmp
+{
+    
+}
+
+-(id)test3
+{
+    return nil;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

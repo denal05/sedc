@@ -57,6 +57,7 @@
 		92CC6AA01D37EE1D00DCF676 /* UILabel+TextColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TextColor.m"; sourceTree = "<group>"; };
 		92CC6AA21D37F1B700DCF676 /* UITextView+TextColorSpaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+TextColorSpaces.h"; sourceTree = "<group>"; };
 		92CC6AA31D37F1B700DCF676 /* UITextView+TextColorSpaces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+TextColorSpaces.m"; sourceTree = "<group>"; };
+		92CC6AA51D3808A200DCF676 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +110,7 @@
 			children = (
 				92CC6A6F1D37EDCD00DCF676 /* AppDelegate.h */,
 				92CC6A701D37EDCD00DCF676 /* AppDelegate.m */,
+				92CC6AA51D3808A200DCF676 /* Test.h */,
 				92CC6A721D37EDCD00DCF676 /* ViewController.h */,
 				92CC6A731D37EDCD00DCF676 /* ViewController.m */,
 				92CC6A9F1D37EE1D00DCF676 /* UILabel+TextColor.h */,

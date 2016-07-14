@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "UILabel+TextColor.h"
 #import "UITextView+TextColorSpaces.h"
+#import "Test.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <Test>
 
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (weak, nonatomic) IBOutlet UITextView *myTextView;
