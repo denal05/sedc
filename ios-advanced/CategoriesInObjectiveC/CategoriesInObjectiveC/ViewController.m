@@ -37,6 +37,22 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(7 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         printf(">>>timer3\n");
     });
+    
+    // Returns current time
+    NSDate *date = [NSDate date];
+    
+    // Returns current time + x seconds
+    int x = 4;
+    [NSDate dateWithTimeIntervalSinceNow:x];
+    
+    // Returns 1970
+    [NSDate dateWithTimeIntervalSince1970:0];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"hh:mm:ss dd.MM.yyyy"];
+    printf(">>>%s\n", [[date description] UTF8String]);
+    NSString *dateString = [dateFormatter stringFromDate:date];
+    printf(">>>%s\n", [dateString UTF8String]);
 }
 
 -(void)f1
