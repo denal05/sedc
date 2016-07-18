@@ -14,19 +14,22 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - GoogleMaps (1.13.2)
   - SSKeychain (1.4.0)
   - ViewDeck (2.4.2)
 
 DEPENDENCIES:
   - AFNetworking
+  - GoogleMaps
   - SSKeychain
   - ViewDeck
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  GoogleMaps: b20a103ff307f58392e603cf142e59d7e30374c1
   SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
   ViewDeck: 0b7b83bc2782a20dfb76207d0a2e8c5e6a6d182d
 
-PODFILE CHECKSUM: 03a6ad5b9e29ed786e6a5c39b2c90d430d6a86b1
+PODFILE CHECKSUM: 7dc184157c23ae3867b5bb435b0bebc8296a9996
 
 COCOAPODS: 1.0.1

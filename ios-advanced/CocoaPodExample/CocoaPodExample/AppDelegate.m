@@ -34,6 +34,9 @@
     
     [self.window setRootViewController:login];
     [self.window makeKeyAndVisible];
+    
+    [GMSServices provideAPIKey:@"AIzaSyDD59_bZVbBpdXIfF5EB1qrF-HwpaDJhEw"];
+    
     return YES;
 }
 

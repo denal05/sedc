@@ -9,6 +9,7 @@ target 'CocoaPodExample' do
   pod 'AFNetworking'
   pod 'ViewDeck'
   pod 'SSKeychain'
+  pod 'GoogleMaps'
 
   target 'CocoaPodExampleTests' do
     inherit! :search_paths

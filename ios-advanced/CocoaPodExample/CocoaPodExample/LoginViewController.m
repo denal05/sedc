@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 #import "MainViewController.h"
 #import "LeftViewController.h"
-#import "LoginViewController.h"
+#import "GoogleMapsViewController.h"
 #import <ViewDeck/ViewDeck.h>
 
 #define kServiceName @"tmpService"
@@ -50,7 +50,8 @@
             printf(">>> LOGGING-IN SUCCESSFULLY :) \n");
             
             MainViewController *main = [[MainViewController alloc] init];
-            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:main];
+            GoogleMapsViewController *googleMaps = [[GoogleMapsViewController alloc] init];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:googleMaps]; // initWithRootViewController:main
             IIViewDeckController *viewDeck = [[IIViewDeckController alloc] initWithCenterViewController:nav leftViewController:[[LeftViewController alloc] init]];
             
             viewDeck.modalPresentationStyle = UIModalPresentationFullScreen;
