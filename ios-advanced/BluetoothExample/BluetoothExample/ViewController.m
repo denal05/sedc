@@ -18,13 +18,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    /*
     ////[self startCentralManager];
     [self startPeripheralManager];
     
     [self startMotionManager];
     
     [self localAuthentication];
+    */
+    
+    UILocalNotification *ln = [[UILocalNotification alloc] init];
+    NSMutableDictionary *userInfo = [[NSMutableDictionary alloc] init];
+    [userInfo setValue:@"val1" forKey:@"key1"];
+    [ln setUserInfo:userInfo];
+    [ln setAlertBody:@"Testing local notification"];
+    [ln setFireDate:[NSDate dateWithTimeIntervalSinceNow:3]];
+    [[UIApplication sharedApplication] scheduleLocalNotification:ln];
 }
 
 -(void)localAuthentication
