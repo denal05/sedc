@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <LocalAuthentication/LocalAuthentication.h>
 
 @interface ViewController ()
 
@@ -22,6 +23,35 @@
     [self startPeripheralManager];
     
     [self startMotionManager];
+    
+    [self localAuthentication];
+}
+
+-(void)localAuthentication
+{
+    LAContext *context = [[LAContext alloc] init];
+    NSError *error = nil;
+    if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error])
+    {
+        [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:@">>> Custom reason for evaluatePolicy" reply:^(BOOL success, NSError * _Nullable error) {
+            if (success)
+            {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"success" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+                    [alert show];
+                });
+            }
+        }];
+    }
+    else
+    {
+        printf(">>> Touch ID not supported! \n");
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"no success!" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            [alert show];
+        });
+    }
+//    [self localAuthentication];
 }
 
 -(void)startCentralManager
@@ -41,32 +71,34 @@
     _cmManager = [[CMMotionManager alloc] init];
     _cmManager.accelerometerUpdateInterval = 0.01;
     [_cmManager startAccelerometerUpdatesToQueue:[NSOperationQueue mainQueue]  withHandler:^(CMAccelerometerData * _Nullable accelerometerData, NSError * _Nullable error) {
-        float x = accelerometerData.acceleration.x;
-        float y = accelerometerData.acceleration.y;
-        float z = accelerometerData.acceleration.z;
-        printf(">>> accelerometerData: x=%f, y=%f, z=%f\n", x, y, z);
+        float ax = accelerometerData.acceleration.x;
+        float ay = accelerometerData.acceleration.y;
+        float az = accelerometerData.acceleration.z;
+        ////printf(">>> accelerometerData: x=%f, y=%f, z=%f\n", ax, ay, az);
     }];
     
     _cmManager.gyroUpdateInterval = 0.01;
     
     [_cmManager startGyroUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMGyroData * _Nullable gyroData, NSError * _Nullable error) {
-        float x = gyroData.rotationRate.x;
-        float y = gyroData.rotationRate.y;
-        float z = gyroData.rotationRate.z;
+        float gx = gyroData.rotationRate.x;
+        float gy = gyroData.rotationRate.y;
+        float gz = gyroData.rotationRate.z;
+        ////printf(">>> gyroData: x=%f, y=%f, z=%f\n", gx, gy, gz);
     }];
     
     _cmManager.magnetometerUpdateInterval = 0.01;
     
     [_cmManager startMagnetometerUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMMagnetometerData * _Nullable magnetometerData, NSError * _Nullable error) {
-        float x = magnetometerData.magneticField.x;
-        float y = magnetometerData.magneticField.y;
-        float z = magnetometerData.magneticField.z;
+        float mx = magnetometerData.magneticField.x;
+        float my = magnetometerData.magneticField.y;
+        float mz = magnetometerData.magneticField.z;
+        ////printf(">>> magnetometerData: x=%f, y=%f, z=%f\n", mx, my, mz);
     }];
 }
 
 -(void)centralManagerDidUpdateState:(CBCentralManager *)central
 {
-    printf(">>> centralManagerDidUpdateState: \n");
+    printf(">>> centralManagerDidUpdateState: STATE: %ld\n", central.state);
 }
 
 -(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *,id> *)advertisementData RSSI:(NSNumber *)RSSI

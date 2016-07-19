@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9225225D1D3E8535005EBC7A /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9225225C1D3E8534005EBC7A /* LocalAuthentication.framework */; };
 		925D6F591D3D328B0049CCA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 925D6F581D3D328B0049CCA6 /* main.m */; };
 		925D6F5C1D3D328B0049CCA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 925D6F5B1D3D328B0049CCA6 /* AppDelegate.m */; };
 		925D6F5F1D3D328B0049CCA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925D6F5E1D3D328B0049CCA6 /* ViewController.m */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9225225C1D3E8534005EBC7A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		925D6F541D3D328B0049CCA6 /* BluetoothExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		925D6F581D3D328B0049CCA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		925D6F5A1D3D328B0049CCA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9225225D1D3E8535005EBC7A /* LocalAuthentication.framework in Frameworks */,
 				925D6F8E1D3D32AA0049CCA6 /* CoreMotion.framework in Frameworks */,
 				925D6F8C1D3D32A40049CCA6 /* CoreBluetooth.framework in Frameworks */,
 			);
@@ -150,6 +153,7 @@
 		925D6F8A1D3D32A30049CCA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9225225C1D3E8534005EBC7A /* LocalAuthentication.framework */,
 				925D6F8D1D3D32AA0049CCA6 /* CoreMotion.framework */,
 				925D6F8B1D3D32A40049CCA6 /* CoreBluetooth.framework */,
 			);
@@ -441,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BluetoothExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mk.inform.BluetoothExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BluetoothExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mk.inform.BluetoothExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,6 +529,7 @@
 				925D6F831D3D328C0049CCA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		925D6F841D3D328C0049CCA6 /* Build configuration list for PBXNativeTarget "BluetoothExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +538,7 @@
 				925D6F861D3D328C0049CCA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		925D6F871D3D328C0049CCA6 /* Build configuration list for PBXNativeTarget "BluetoothExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +547,7 @@
 				925D6F891D3D328C0049CCA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
